@@ -53,7 +53,7 @@ class Pokemon:
 
 
     def _extract_stats(self) -> None:
-        self.stats["total"] = self.original_data.select_one('td[class="cell-total"]').text
+        self.stats["total"] = self.original_data.select_one('td[class="cell-num cell-total"]').text
         
         stats_tags = self.original_data.select('td[class="cell-num"]')
         self.stats["hp"] = stats_tags[0].text
