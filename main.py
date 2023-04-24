@@ -25,7 +25,7 @@ def main() -> None:
         # print(pokedex_entry.id + " \t|\t " + pokedex_entry.name)
 
     # dump to file
-    write_to_file(container=pokedex, pretty_print=True, record_date=False)
+    write_to_file(container=pokedex, pretty_print=True, record_date=True)
 
 
 def write_to_file(filename:str="pokedex", container=[], 
